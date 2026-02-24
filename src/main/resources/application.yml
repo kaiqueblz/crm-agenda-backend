@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/crm_agenda
+    username: postgres
+    password: spfc1603
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+app:
+  jwt:
+    secret: CyF/7k4UL6bIhN5lIoK/FaVXttrBal16YFbL5pOR51Q=
+    expiration-minutes: 60
+
+    logging:
+      level:
+        org.springframework.security: DEBUG
